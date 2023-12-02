@@ -1,0 +1,94 @@
+<!-- Create an image gallery using a CSS grid -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .photo-gallery {
+            background: aqua;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 250px);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .photo1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        .photo2 {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        .photo3 {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        .photo4 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+
+        .photo5 {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 5;
+        }
+
+        .photo6 {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="photo-gallery">
+        <div class="photo1">
+            <img src="image/software1.jpg" alt="software1">
+        </div>
+        
+        <div class="photo2">
+            <img src="image/software2.jpg" alt="software2">
+        </div>
+
+        <div class="photo3">
+            <img src="image/software4.jpg" alt="">
+        </div>
+
+        <div class="photo4">
+            <img src="image/software4.jpg" alt="">
+        </div>
+
+        <div class="photo5">
+            <img src="image/software5.jpg" alt="">
+        </div>
+
+        <div class="photo6">
+            <img src="image/software6.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
